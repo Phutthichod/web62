@@ -1,0 +1,84 @@
+@import "../color.scss";
+@import "../mixin.scss";
+.main{
+    @include grid(2fr 6fr 2fr,0);
+}
+.container{
+
+    padding: 0;
+    @include grid(1fr,1rem);
+    justify-self: center;
+    width: 100%;
+    span{
+        margin-top:25px;
+        justify-self: flex-start;
+    }
+    .show-img-profile{
+        @include grid(3fr 4fr 1fr,1rem);
+        .upload-img{
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            img{
+                width: 45px;
+                height: 45px;
+            }
+            input{
+                cursor: pointer;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+            }
+        }
+        strong{
+            justify-self: flex-start;
+            align-self: center;
+            margin-left: 15px;
+        }
+        span{
+            margin: 0px;
+            align-self: center;
+        }
+    }
+    .show-profile-detail{
+        @include grid(3fr 4fr 1fr,1rem);
+        span{
+            margin: 0px;
+            justify-self: flex-start;
+            align-self: center;
+        }
+        strong{
+            margin-left: 15px;
+            justify-self: flex-start;
+        }
+        .manage-mail{
+            @include grid(1fr 1fr,1rem);
+        }
+
+
+    }
+
+}
+#img-show-crop{
+    width: 200px;
+    height: 200px;
+}
+
+#upload-demo{
+    width: 200px;
+    height: 200px;
+    padding-bottom:25px;
+    margin-bottom:15px;
+}
+.card-show-crop{
+margin-top: 78px;
+}
+
+
+
+

@@ -1,0 +1,94 @@
+
+@import "../color.scss";
+@import "../mixin.scss";
+@mixin menu($grid-main){
+    @include grid($grid-main,1rem);
+        .nav-icon{
+            @include grid(1fr,0);
+            i{
+               font-size: 30px;
+               justify-self: center;
+               align-self: center;
+               color: $color-green1;
+               margin-left: 6px;
+               transition: 0.3 ease-in-out;
+                sup{
+                    color: $color-number-alert;
+                    font-size: 20px;
+                }
+            }
+            i:hover{
+                color: yellowgreen;
+                cursor: pointer;
+            }
+
+            span{
+                font-size: 10px;
+                justify-self: center;
+                align-self: center;
+            }
+    }
+}
+.nav-top{
+    background-color: $color-green1;;
+}
+.nav-body{
+    background-color: $color-nav;
+}
+.nav-main{
+
+    @include grid(1fr 2fr 10fr 4fr 2fr,1rem);
+
+    a{
+        text-decoration: none;
+        align-self: center;
+        font-size: 18px;
+        color: $color-green1;
+        // .title{
+
+        // }
+        .logo>img{
+            width: 90px;
+        }
+    }
+    .profile{
+        align-self: center;
+        justify-content: flex-end;
+        a{
+            color: $color-green1;
+        }
+    }
+    .search{
+        @include grid(3fr 1fr 1fr,1rem);
+        justify-self: center;
+    }
+    .menu{
+        @include menu(1fr 1fr 1fr);
+    }
+    .menu-2{
+        @include menu(repeat(5,1fr));
+    }
+}
+li{
+    list-style: none;
+}
+.nav-content{
+    height: 70px;
+    padding: 0;
+}
+.font-weight-normal{
+    color: $color-green1;
+}
+.font-weight-normal:hover{
+    color: yellowgreen;
+}
+.status-login{
+    color: $color-green1;
+}
+.status-login-fail{
+    color: red;
+}
+.img-profile{
+    width: 50px;
+}
+

@@ -1,0 +1,156 @@
+.nav-top {
+  background-color: #006765;
+}
+
+.nav-body {
+  background-color: #d8e3dc;
+}
+
+.nav-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 10fr 4fr 2fr;
+  grid-gap: 1rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.nav-main a {
+  text-decoration: none;
+  align-self: center;
+  font-size: 18px;
+  color: #006765;
+}
+
+.nav-main a .logo > img {
+  width: 90px;
+}
+
+.nav-main .profile {
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.nav-main .profile a {
+  color: #006765;
+}
+
+.nav-main .search {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.nav-main .menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.nav-main .menu .nav-icon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  align-self: center;
+  justify-content: center;
+}
+
+.nav-main .menu .nav-icon i {
+  font-size: 30px;
+  justify-self: center;
+  align-self: center;
+  color: #006765;
+  margin-left: 6px;
+  transition: 0.3 ease-in-out;
+}
+
+.nav-main .menu .nav-icon i sup {
+  color: red;
+  font-size: 20px;
+}
+
+.nav-main .menu .nav-icon i:hover {
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+.nav-main .menu .nav-icon span {
+  font-size: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+.nav-main .menu-2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+  align-self: center;
+  justify-content: center;
+}
+
+.nav-main .menu-2 .nav-icon {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  align-self: center;
+  justify-content: center;
+}
+
+.nav-main .menu-2 .nav-icon i {
+  font-size: 30px;
+  justify-self: center;
+  align-self: center;
+  color: #006765;
+  margin-left: 6px;
+  transition: 0.3 ease-in-out;
+}
+
+.nav-main .menu-2 .nav-icon i sup {
+  color: red;
+  font-size: 20px;
+}
+
+.nav-main .menu-2 .nav-icon i:hover {
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+.nav-main .menu-2 .nav-icon span {
+  font-size: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-content {
+  height: 70px;
+  padding: 0;
+}
+
+.font-weight-normal {
+  color: #006765;
+}
+
+.font-weight-normal:hover {
+  color: yellowgreen;
+}
+
+.status-login {
+  color: #006765;
+}
+
+.status-login-fail {
+  color: red;
+}
+
+.img-profile {
+  width: 50px;
+}
+

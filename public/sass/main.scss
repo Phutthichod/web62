@@ -1,0 +1,31 @@
+.nav-main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 10fr 4fr 2fr;
+    grid-gap: 1rem;
+    align-self: center;
+    justify-content: center;
+}
+.nav-main .logo>img{
+    width: 70px;
+}
+li{
+    list-style: none;
+}
+.nav-main .title{
+    align-self: center;
+}
+.nav-main .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    align-self: center;
+    justify-content: center;
+}
+.nav-main .menu>div i{
+    font-size: 30px;
+}
+.nav-main .profile{
+    align-self: center;
+    justify-content: flex-end;
+}
+

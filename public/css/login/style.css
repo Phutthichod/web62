@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.container .login-form {
+  margin-top: 50px;
+  width: 10cm;
+  justify-self: center;
+}
+
+.container .login-form .logo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 0;
+  align-self: center;
+  justify-content: center;
+}
+
+.container .login-form .logo img {
+  width: 3cm;
+  justify-self: self-end;
+}
+
+.container .login-form .logo strong {
+  justify-self: flex-start;
+  align-self: center;
+  font-size: 25px;
+  color: #006765;
+}
+
+.container .login-form form .form-group .form-control {
+  height: 1.5cm;
+}
+
+.container .login-form button {
+  width: 100%;
+  height: 1.2cm;
+}
+
